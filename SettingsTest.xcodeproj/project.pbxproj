@@ -12,6 +12,8 @@
 		383A6C391E8B9A2600B58D54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383A6C371E8B9A2600B58D54 /* Main.storyboard */; };
 		383A6C3B1E8B9A2600B58D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383A6C3A1E8B9A2600B58D54 /* Assets.xcassets */; };
 		383A6C3E1E8B9A2600B58D54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383A6C3C1E8B9A2600B58D54 /* LaunchScreen.storyboard */; };
+		383A6C461E8B9A3800B58D54 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 383A6C451E8B9A3800B58D54 /* Settings.bundle */; };
+		383A6C481E8B9D9400B58D54 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383A6C471E8B9D9400B58D54 /* SettingsBundleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		383A6C3A1E8B9A2600B58D54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383A6C3D1E8B9A2600B58D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383A6C3F1E8B9A2600B58D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383A6C451E8B9A3800B58D54 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		383A6C471E8B9D9400B58D54 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				383A6C3A1E8B9A2600B58D54 /* Assets.xcassets */,
 				383A6C3C1E8B9A2600B58D54 /* LaunchScreen.storyboard */,
 				383A6C3F1E8B9A2600B58D54 /* Info.plist */,
+				383A6C471E8B9D9400B58D54 /* SettingsBundleHelper.swift */,
+				383A6C451E8B9A3800B58D54 /* Settings.bundle */,
 			);
 			path = SettingsTest;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					383A6C2F1E8B9A2600B58D54 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D5248MR3YC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383A6C461E8B9A3800B58D54 /* Settings.bundle in Resources */,
 				383A6C3E1E8B9A2600B58D54 /* LaunchScreen.storyboard in Resources */,
 				383A6C3B1E8B9A2600B58D54 /* Assets.xcassets in Resources */,
 				383A6C391E8B9A2600B58D54 /* Main.storyboard in Resources */,
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				383A6C361E8B9A2600B58D54 /* ViewController.swift in Sources */,
+				383A6C481E8B9D9400B58D54 /* SettingsBundleHelper.swift in Sources */,
 				383A6C341E8B9A2600B58D54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +269,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D5248MR3YC;
 				INFOPLIST_FILE = SettingsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abhilash.SettingsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +283,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D5248MR3YC;
 				INFOPLIST_FILE = SettingsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abhilash.SettingsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
