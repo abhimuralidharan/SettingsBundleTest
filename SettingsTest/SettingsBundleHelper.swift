@@ -12,6 +12,8 @@ class SettingsBundleHelper {
         static let Reset = "RESET_APP_KEY"
         static let BuildVersionKey = "build_preference"
         static let AppVersionKey = "version_preference"
+        static let RedThemeKey = "RedThemeKey"
+
     }
     class func checkAndExecuteSettings() {
         if UserDefaults.standard.bool(forKey: SettingsBundleKeys.Reset) {
